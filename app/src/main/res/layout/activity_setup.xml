@@ -1,0 +1,347 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="ua.sanya5791.geocontrol.SetupActivity"
+    android:nestedScrollingEnabled="true">
+
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:text="Choose siren" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ib_male"
+                android:src="@drawable/male_off"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ib_female"
+                android:src="@drawable/female_off"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ib_bell"
+                android:src="@drawable/bell_off"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Choose a contacs"
+            android:id="@+id/tv_contacts"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_contacts"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_contacts"
+                android:src="@drawable/male_on"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/tv_contacts"
+                android:layout_alignEnd="@+id/tv_contacts"
+                android:layout_gravity="center_vertical" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="middle">
+                <TableRow>
+                    android:padding="5dp">
+                    <TextView
+                        android:text="Хуторной Александр"
+                        android:id="@+id/tv_contact0"
+                        style="@style/tv_name" />
+                    <TextView
+                        android:text="+38067-561-3196"
+                        android:id="@+id/tv_contact_num0"
+                        style="@style/tv_number" />
+                </TableRow>
+                <TableRow>
+                    android:padding="5dp">
+                    <TextView
+                        android:text="Папа"
+                        android:id="@+id/tv_contact1"
+                        style="@style/tv_name" />
+                    <TextView
+                        android:text="+38067-561-3196"
+                        android:id="@+id/tv_contact_num1"
+                        style="@style/tv_number" />
+                </TableRow>
+                <TableRow>
+                    android:padding="5dp">
+                    <TextView
+                        android:text="Хуторной Александр"
+                        android:id="@+id/tv_contact2"
+                        style="@style/tv_name" />
+                    <TextView
+                        android:text="+38067-561-3196"
+                        android:id="@+id/tv_contact_num2"
+                        style="@style/tv_number" />
+                </TableRow>
+                <TableRow>
+                    android:padding="5dp">
+                    <TextView
+                        android:text="Хуторной Александр"
+                        android:id="@+id/tv_contact3"
+                        style="@style/tv_name" />
+                    <TextView
+                        android:text="+38067-561-3196"
+                        android:id="@+id/tv_contact_num3"
+                        style="@style/tv_number" />
+                </TableRow>
+                <TableRow>
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_contact4"
+                        style="@style/tv_name"
+                         />
+                    <TextView
+                        android:id="@+id/tv_contact_num4"
+                        style="@style/tv_number" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Choose a facebook contacts"
+            android:id="@+id/textView"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_facebook"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/facebook"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/tv_contacts"
+                android:layout_alignEnd="@+id/tv_contacts" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="middle">
+                <TableRow>
+                    android:padding="5dp">
+                    <TextView
+                        android:text="Хуторной Александр"
+                        android:id="@+id/tv_fb0"
+                        style="@style/tv_name" />
+                    <TextView
+                        android:text="+38067-561-3196"
+                        android:id="@+id/tv_fb_id0"
+                        style="@style/tv_number" />
+                </TableRow>
+                <TableRow>
+                    android:padding="5dp">
+                    <TextView
+                        android:text="Хуторной Александр"
+                        android:id="@+id/tv_fb1"
+                        style="@style/tv_name" />
+                    <TextView
+                        android:text="+38067-561-3196"
+                        android:id="@+id/tv_fb_id1"
+                        style="@style/tv_number" />
+                </TableRow>
+                <TableRow>
+                    android:padding="5dp">
+                    <TextView
+                        android:text="Хуторной Александр"
+                        android:id="@+id/tv_fb2"
+                        style="@style/tv_name" />
+                    <TextView
+                        android:text="+38067-561-3196"
+                        android:id="@+id/tv_fb_id2"
+                        style="@style/tv_number" />
+                </TableRow>
+                <TableRow>
+                    android:padding="5dp">
+                    <TextView
+                        android:text="Хуторной Александр"
+                        android:id="@+id/tv_fb3"
+                        style="@style/tv_name" />
+                    <TextView
+                        android:text="+38067-561-3196"
+                        android:id="@+id/tv_fb_id3"
+                        style="@style/tv_number" />
+                </TableRow>
+                <TableRow>
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_fb4"
+                        style="@style/tv_name" />
+                    <TextView
+                                                android:id="@+id/tv_fb_id4"
+                        style="@style/tv_number" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Choose E-mail"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_alignRight="@+id/textView">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/mail"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/tv_contacts"
+                android:layout_alignEnd="@+id/tv_contacts" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/et_email"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Map"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:src="@drawable/map"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/tv_contacts"
+                android:layout_alignEnd="@+id/tv_contacts" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_route"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Phone"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout6"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView4"
+            android:layout_alignRight="@+id/textView3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView5"
+                android:src="@drawable/phone"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/tv_contacts"
+                android:layout_alignEnd="@+id/tv_contacts" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/et_phone1"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

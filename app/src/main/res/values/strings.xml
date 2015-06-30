@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GeoControl</string>
+    <string name="widget_name">My first widget</string>
+    <string name="widget_text">Text in widget</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_setup">SetupActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_contacts_list">ContactsListActivity</string>
+</resources>
